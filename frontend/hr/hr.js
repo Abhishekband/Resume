@@ -97,5 +97,5 @@ window.toggleHRPanel = function () {
 /* ================= LOGOUT ================= */
 window.logout = async function () {
   await signOut(auth);
-  window.location.href = "../auth/index.html";
+  window.location.href = " /index.html";
 };

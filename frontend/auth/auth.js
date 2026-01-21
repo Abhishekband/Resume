@@ -1,4 +1,6 @@
 import { auth, db } from "../js/firebase.js";
+
+
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword
@@ -29,9 +31,9 @@ document.getElementById("loginForm")?.addEventListener("submit", async (e) => {
     const role = userDoc.data().role;
 
     if (role === "hr") {
-      window.location.href = "../hr/hr-dashboard.html";
+      window.location.href = "/frontend/hr/hr-dashboard.html";
     } else {
-      window.location.href = "../candidate/upload-resume.html";
+      window.location.href = "/frontend/candidate/upload-resume.html";
     }
   } catch (error) {
     
